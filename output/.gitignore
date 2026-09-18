@@ -1,0 +1,4 @@
+# This folder holds a disposable scrape snapshot written by cron/scrape-blog.py.
+# It's uploaded as a workflow artifact for debugging, not committed to the repo.
+*
+!.gitignore

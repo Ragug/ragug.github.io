@@ -1,0 +1,66 @@
+name: Scrape Medium Blog
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC (~08:30 IST). Cron uses UTC regardless of repo/runner timezone.
+    - cron: "0 3 * * *"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab
+  push:
+    paths:
+      - "cron/scrape-blog.py"
+      - ".github/workflows/scrape-blog.yml"
+
+permissions:
+  contents: write # needed to commit & push the updated JSON
+
+concurrency:
+  group: scrape-blog
+  cancel-in-progress: false # never cancel a run mid-scrape/commit
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      # No requirements.txt / venv needed — scrape-blog.py declares its own
+      # dependencies inline (PEP 723), so `uv run` resolves and caches them itself.
+      - name: Run scraper
+        id: scrape
+        run: >
+          uv run cron/scrape-blog.py
+          --username ragug
+          --raw-output output/blogs.json
+          --site-output assets/blogs/medium_blogs.json
+
+      - name: Commit updated feed
+        if: steps.scrape.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/blogs/medium_blogs.json
+          git commit -m "chore: update Medium blog feed [skip ci]"
+          git push
+
+      - name: No changes
+        if: steps.scrape.outputs.changed != 'true'
+        run: echo "No new/updated posts — skipping commit."
+
+      # Optional: keep the raw scrape snapshot as a downloadable artifact for
+      # debugging, without committing it to the repo (see .gitignore note below).
+      - name: Upload raw scrape snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-scrape-snapshot
+          path: output/blogs.json
+          retention-days: 7
+          if-no-files-found: ignore
