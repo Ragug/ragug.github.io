@@ -28,8 +28,6 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4
-        with:
-          enable-cache: true
 
       # No requirements.txt / venv needed — scrape-blog.py declares its own
       # dependencies inline (PEP 723), so `uv run` resolves and caches them itself.
