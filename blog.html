@@ -7,23 +7,34 @@
     <title>Medium Articles - Ragu</title>
 
     <!-- SEO Tags -->
-    <meta name="description" content="We provide services in web development, web scraping, Telegram bots, Chrome extension development, and Arduino programming. Contact us to bring your ideas to life.">
-    <meta name="keywords" content="web development, web scraping, telegram bots, chrome extension, Arduino,ragu, ragug, Ragu, ragu website, ragu2k, ragu kec, RAGU, ragu eee, raguggg">
+    <meta name="description"
+        content="Read Ragu G's articles on web development, web scraping, Telegram bots, Chrome extension development, and Arduino programming.">
+    <meta name="keywords"
+        content="web development, web scraping, telegram bots, chrome extension, Arduino,ragu, ragug, Ragu, ragu website, ragu2k, ragu kec, RAGU, ragu eee, raguggg">
     <meta name="author" content="RAGU G">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="google7ab02f675b61b20e">
+    <link rel="canonical" href="https://www.ragug.com/blog.html">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Our Services - Web Development, Web Scraping, Telegram Bots, and More">
-    <meta property="og:description" content="Explore our services to discover how we can help you with web development, web scraping, Telegram bots, Chrome extensions, Arduino projects, and more.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Medium Articles - Ragu">
+    <meta property="og:description"
+        content="Read Ragu G's articles on web development, web scraping, Telegram bots, Chrome extensions, and Arduino projects.">
     <meta property="og:image" content="./assets/img/aboutpic.jpg">
-    <meta property="og:url" content="https://www.ragug.com/">
+    <meta property="og:url" content="https://www.ragug.com/blog.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Medium Articles - Ragu">
+    <meta name="twitter:description"
+        content="Read Ragu G's articles on web development, web scraping, Telegram bots, Chrome extensions, and Arduino projects.">
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0WLPZ5VQY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-X0WLPZ5VQY');
     </script>
@@ -33,7 +44,9 @@
     <link href="assets/img/logo.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -52,180 +65,727 @@
             background-color: #f8f9fa;
         }
 
-        .card-title {
-            color: #333;
-        }
-
-        .card-subtitle {
-            color: #666;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-
         .container {
             padding-top: 50px;
         }
 
-        .card-img-top {
-            height: 200px;
+        #articles-row {
+            padding-bottom: 60px;
+        }
+
+        /* ---------- Toolbar (search / sort / filter / count) ---------- */
+        .blog-toolbar {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .blog-toolbar .form-control,
+        .blog-toolbar .form-select {
+            border-radius: 8px;
+        }
+
+        .blog-toolbar label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.3rem;
+        }
+
+        .blog-search-wrap {
+            position: relative;
+        }
+
+        .blog-search-wrap i {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .blog-search-wrap input {
+            padding-left: 2.1rem;
+        }
+
+        .blog-results-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .blog-results-meta .clear-filters {
+            font-size: 0.82rem;
+            color: #4338ca;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .blog-results-meta .clear-filters:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Article Card ---------- */
+        .article-card {
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: #fff;
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .article-thumb-wrap {
+            position: relative;
+            width: 100%;
+            padding-top: 52%;
+            /* 1.9:1 aspect ratio */
+            background: linear-gradient(90deg, #eee 25%, #f5f5f5 37%, #eee 63%);
+            background-size: 400% 100%;
+            animation: shimmer 1.4s ease infinite;
+            overflow: hidden;
+        }
+
+        .article-thumb-wrap.loaded {
+            animation: none;
+            background: none;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .article-thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .article-thumb.is-visible {
+            opacity: 1;
         }
 
         .card-body {
-            height: 250px;
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            padding: 1.1rem 1.25rem 1.25rem;
         }
 
-        .description {
-            flex-grow: 1;
+        .card-title {
+            color: #222;
+            font-weight: 700;
+            font-size: 1.08rem;
+            line-height: 1.35;
+            margin-bottom: 0.4rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-subtitle-text {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-meta {
+            font-size: 0.8rem;
+            color: #888;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .article-tag {
+            background: #eef2ff;
+            color: #4338ca;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .article-card .btn-primary {
+            margin-top: auto;
+            background-color: #007bff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+        }
+
+        .article-card .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        mark {
+            background: #fff3a3;
+            padding: 0 1px;
+            border-radius: 2px;
+        }
+
+        #blog-status {
+            text-align: center;
+            color: #777;
+            padding: 3rem 1rem;
+        }
+
+        #blog-status.is-error {
+            color: #b91c1c;
         }
     </style>
 </head>
 
 <body>
-      <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">RAGU</a></h1>
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li ><a class="active"  href="blog.html">Blogs</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="tools.html">Tools</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">RAGU</a></h1>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="blog.html">Blogs</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
 
-      <div class="header-social-links">
-        <a href="mailto: ragu19062002@gmail.com"><i class="bi bi-envelope-at"></i></a>
-        <a href="http://api.whatsapp.com/send?phone=+917598226670&amp;text=Hi Ragu" target="_"><i class="bi bi-whatsapp"></i></a>
-        <a href="tg://resolve?domain=ragu2k"><i class="bi bi-telegram"></i></a>
-        <a href="https://www.instagram.com/_ragug_/" target="_"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/ragug/" target="_"> <i class="bi bi-linkedin"></i></a>
-        <a href="https://www.ragug.com/" target="_"><i class="bi bi-github"></i></a>
-      </div>
+            <div class="header-social-links">
+                <a href="mailto: ragu19062002@gmail.com"><i class="bi bi-envelope-at"></i></a>
+                <a href="http://api.whatsapp.com/send?phone=+917598226670&amp;text=Hi Ragu" target="_"><i
+                        class="bi bi-whatsapp"></i></a>
+                <a href="tg://resolve?domain=ragu2k"><i class="bi bi-telegram"></i></a>
+                <a href="https://www.instagram.com/_ragug_/" target="_"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ragug/" target="_"> <i class="bi bi-linkedin"></i></a>
+                <a href="https://www.ragug.com/" target="_"><i class="bi bi-github"></i></a>
+            </div>
 
-    </div>
+        </div>
 
-  </header><!-- End Header -->
-  <main id="main">
-    
-    <div>
-        <h2>Blogs-blog</h2>
-      </div>
+    </header><!-- End Header -->
+    <main id="main">
 
-    <div class="container">
-        <div class="row" id="articles-row"></div>
-    </div>
-</main>
+        <div>
+            <h2>Blogs</h2>
+        </div>
+
+        <div class="container">
+
+            <!-- ---------- Toolbar: search, sort, tag filter ---------- -->
+            <div class="blog-toolbar">
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-8">
+                        <label for="blog-search">Search</label>
+                        <div class="blog-search-wrap">
+                            <i class="bi bi-search"></i>
+                            <input type="search" id="blog-search" class="form-control"
+                                placeholder="Search title, subtitle, tags…" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="blog-sort">Sort by</label>
+                        <select id="blog-sort" class="form-select">
+                            <option value="latest">Latest first</option>
+                            <option value="oldest">Oldest first</option>
+                            <option value="claps">Most claps</option>
+                            <option value="comments">Most comments</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-results-meta">
+                <span id="results-count">Loading articles…</span>
+                <a href="#" id="clear-filters" class="clear-filters" style="display:none;">Clear filters</a>
+            </div>
+
+            <div class="row" id="articles-row" aria-live="polite"></div>
+            <p id="blog-status">Loading articles…</p>
+        </div>
+
+        <!-- Fallback for crawlers / users without JS -->
+        <noscript>
+            <div class="container">
+                <p>JavaScript is required to load the article list. You can browse all articles directly on
+                    <a href="https://medium.com/@ragug" target="_blank" rel="noopener noreferrer">Medium</a>.
+                </p>
+            </div>
+        </noscript>
+    </main>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const url = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ragug';
-            const articlesRow = document.getElementById('articles-row');
-            const defaultImage = 'assets/img/medium.png'; // Specify the path to your default image here
+            const DATA_URL = "assets/blogs/medium_blogs.json";
+            const DEFAULT_IMAGE = "assets/img/medium.png";
+            const MEDIUM_IMAGE_BASE = "https://miro.medium.com/v2/resize:fit:640/";
+            const MAX_TAGS_SHOWN = 4;
+            const SEARCH_DEBOUNCE_MS = 200;
 
-            // Function to fetch data from the API
+            const articlesRow = document.getElementById("articles-row");
+            const statusEl = document.getElementById("blog-status");
+            const searchInput = document.getElementById("blog-search");
+            const sortSelect = document.getElementById("blog-sort");
+            const resultsCountEl = document.getElementById("results-count");
+            const clearFiltersLink = document.getElementById("clear-filters");
+
+            /** All posts as loaded from JSON (never mutated after load). */
+            let allPosts = [];
+            let totalCount = 0;
+
+            /** Current UI state. */
+            const state = {
+                search: "",
+                sort: "latest",
+            };
+
+            // ---------------------------------------------------------------
+            // Lazy image loading
+            // ---------------------------------------------------------------
+
+            const lazyImageObserver = ("IntersectionObserver" in window)
+                ? new IntersectionObserver(onIntersect, {
+                    root: null,
+                    rootMargin: "200px 0px",
+                    threshold: 0.01,
+                })
+                : null;
+
+            function onIntersect(entries, observer) {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    loadImage(entry.target);
+                    observer.unobserve(entry.target);
+                });
+            }
+
+            function loadImage(img) {
+                const src = img.dataset.src;
+                if (!src) return;
+                img.src = src;
+                img.addEventListener("load", () => {
+                    img.classList.add("is-visible");
+                    const wrap = img.closest(".article-thumb-wrap");
+                    if (wrap) wrap.classList.add("loaded");
+                }, { once: true });
+                img.addEventListener("error", () => {
+                    img.src = DEFAULT_IMAGE;
+                    img.classList.add("is-visible");
+                    const wrap = img.closest(".article-thumb-wrap");
+                    if (wrap) wrap.classList.add("loaded");
+                }, { once: true });
+                img.removeAttribute("data-src");
+            }
+
+            function observeImage(img) {
+                if (lazyImageObserver) {
+                    lazyImageObserver.observe(img);
+                } else {
+                    loadImage(img);
+                }
+            }
+
+            // ---------------------------------------------------------------
+            // Data helpers
+            // ---------------------------------------------------------------
+
+            function getPublishedTimestamp(post) {
+                return post.firstPublishedAt || post.latestPublishedAt || 0;
+            }
+
+            function getLatestTimestamp(post) {
+                return post.latestPublishedAt || post.firstPublishedAt || 0;
+            }
+
+            function getClapCount(post) {
+                return typeof post.clapCount === "number" ? post.clapCount : 0;
+            }
+
+            function getCommentCount(post) {
+                return (post.postResponses && typeof post.postResponses.count === "number")
+                    ? post.postResponses.count
+                    : 0;
+            }
+
+            function getSubtitle(post) {
+                return (post.extendedPreviewContent && post.extendedPreviewContent.subtitle) || "";
+            }
+
+            function getTags(post) {
+                return Array.isArray(post.tags) ? post.tags : [];
+            }
+
+            function formatDate(timestampMs) {
+                if (!timestampMs) return null;
+                return new Date(timestampMs).toLocaleDateString(undefined, {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                });
+            }
+
+            function getImageUrl(post) {
+                const imageId = post.previewImage && post.previewImage.id;
+                return imageId ? `${MEDIUM_IMAGE_BASE}${imageId}` : DEFAULT_IMAGE;
+            }
+
+            function getImageAlt(post) {
+                return (post.previewImage && post.previewImage.alt) || post.title || "Article thumbnail";
+            }
+
+            function escapeRegExp(str) {
+                return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            }
+
+            /** Wraps matches of `query` in <mark> within `text`, HTML-escaping everything else. */
+            function highlight(text, query) {
+                const escaped = escapeHtml(text);
+                if (!query) return escaped;
+                const re = new RegExp(`(${escapeRegExp(query)})`, "ig");
+                return escaped.replace(re, "<mark>$1</mark>");
+            }
+
+            function escapeHtml(str) {
+                const div = document.createElement("div");
+                div.textContent = str;
+                return div.innerHTML;
+            }
+
+            // ---------------------------------------------------------------
+            // Fetch
+            // ---------------------------------------------------------------
+
             async function fetchArticles() {
                 try {
-                    const response = await fetch(url);
+                    const response = await fetch(DATA_URL, { cache: "no-store" });
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
                     const data = await response.json();
-                    displayArticles(data.items);
+                    const posts = Array.isArray(data) ? data : (data.posts || []);
+
+                    allPosts = posts;
+                    totalCount = posts.length;
+
+                    if (!totalCount) {
+                        showStatus("No articles found yet. Check back soon!");
+                        resultsCountEl.textContent = "0 articles";
+                        return;
+                    }
+
+                    hideStatus();
+                    injectStructuredData(allPosts);
+                    render();
                 } catch (error) {
-                    console.error('Error fetching data:', error);
+                    console.error("Error loading articles:", error);
+                    showStatus("Couldn't load articles right now. Please try again later.", true);
+                    resultsCountEl.textContent = "";
                 }
             }
 
-            // Function to display articles
-            function displayArticles(articles) {
-                articles.forEach(article => {
-                    const col = document.createElement('div');
-                    col.className = 'col-lg-4 col-md-6 mb-4';
+            function showStatus(message, isError = false) {
+                statusEl.textContent = message;
+                statusEl.classList.toggle("is-error", isError);
+                statusEl.style.display = "block";
+            }
 
-                    const card = document.createElement('div');
-                    card.className = 'card mb-3';
-                    card.style.width = '100%';
+            function hideStatus() {
+                statusEl.style.display = "none";
+            }
 
-                    const image = document.createElement('img');
-                    image.className = 'card-img-top';
-                    image.alt = article.title;
-                    const thumbnailUrl = extractThumbnail(article.description) || defaultImage;
-                    image.src = thumbnailUrl;
+            // ---------------------------------------------------------------
+            // Filter + sort + render pipeline
+            // ---------------------------------------------------------------
 
-                    const cardBody = document.createElement('div');
-                    cardBody.className = 'card-body';
+            function getFilteredSortedPosts() {
+                const query = state.search.trim().toLowerCase();
 
-                    const cardTitle = document.createElement('h5');
-                    cardTitle.className = 'card-title';
-                    cardTitle.textContent = article.title;
+                let result = allPosts.filter((post) => {
+                    // Search filter — matches title, subtitle, and tag names
+                    if (query) {
+                        const haystack = [
+                            post.title || "",
+                            getSubtitle(post),
+                            ...getTags(post).map((t) => t.displayTitle || t.normalizedTagSlug || ""),
+                        ].join(" ").toLowerCase();
 
-                    const cardSubtitle = document.createElement('h6');
-                    cardSubtitle.className = 'card-subtitle mb-2 text-muted';
-                    cardSubtitle.textContent = new Date(article.pubDate).toLocaleDateString();
+                        if (!haystack.includes(query)) return false;
+                    }
 
-                    const description = document.createElement('p');
-                    description.className = 'card-text description';
-                    description.textContent = truncateDescription(article.description, 156 - article.title.length)
+                    return true;
+                });
 
-                    const link = document.createElement('a');
-                    link.href = article.link;
-                    link.className = 'btn btn-primary';
-                    link.textContent = 'Read More';
+                switch (state.sort) {
+                    case "oldest":
+                        result.sort((a, b) => getPublishedTimestamp(a) - getPublishedTimestamp(b));
+                        break;
+                    case "claps":
+                        result.sort((a, b) => getClapCount(b) - getClapCount(a));
+                        break;
+                    case "comments":
+                        result.sort((a, b) => getCommentCount(b) - getCommentCount(a));
+                        break;
+                    case "latest":
+                    default:
+                        result.sort((a, b) => getLatestTimestamp(b) - getLatestTimestamp(a));
+                        break;
+                }
+
+                return result;
+            }
+
+            function render() {
+                const filtered = getFilteredSortedPosts();
+                updateResultsMeta(filtered.length);
+                displayArticles(filtered, state.search.trim());
+            }
+
+            function updateResultsMeta(filteredCount) {
+                const hasActiveFilters = Boolean(state.search.trim());
+
+                resultsCountEl.textContent = hasActiveFilters
+                    ? `Showing ${filteredCount} of ${totalCount} articles`
+                    : `${totalCount} article${totalCount === 1 ? "" : "s"}`;
+
+                clearFiltersLink.style.display = hasActiveFilters ? "inline" : "none";
+            }
+
+            // ---------------------------------------------------------------
+            // Card rendering
+            // ---------------------------------------------------------------
+
+            function displayArticles(posts, searchQuery) {
+                articlesRow.innerHTML = "";
+
+                if (!posts.length) {
+                    const empty = document.createElement("div");
+                    empty.className = "col-12";
+                    empty.innerHTML = `<p class="text-center text-muted py-5">No articles match your search/filter.</p>`;
+                    articlesRow.appendChild(empty);
+                    return;
+                }
+
+                const fragment = document.createDocumentFragment();
+
+                posts.forEach((post) => {
+                    const col = document.createElement("div");
+                    col.className = "col-lg-4 col-md-6 mb-4";
+
+                    const card = document.createElement("article");
+                    card.className = "article-card";
+                    card.setAttribute("itemscope", "");
+                    card.setAttribute("itemtype", "https://schema.org/BlogPosting");
+
+                    // ---- Thumbnail (lazy-loaded) ----
+                    const thumbWrap = document.createElement("div");
+                    thumbWrap.className = "article-thumb-wrap";
+
+                    const img = document.createElement("img");
+                    img.className = "article-thumb";
+                    img.alt = getImageAlt(post);
+                    img.loading = "lazy";
+                    img.decoding = "async";
+                    img.width = 640;
+                    img.height = 335;
+                    img.dataset.src = getImageUrl(post);
+                    img.setAttribute("itemprop", "image");
+
+                    thumbWrap.appendChild(img);
+                    card.appendChild(thumbWrap);
+
+                    // ---- Body ----
+                    const cardBody = document.createElement("div");
+                    cardBody.className = "card-body";
+
+                    const title = document.createElement("h3");
+                    title.className = "card-title";
+                    title.setAttribute("itemprop", "headline");
+                    title.innerHTML = highlight(post.title || "Untitled", searchQuery);
+                    cardBody.appendChild(title);
+
+                    const subtitleText = getSubtitle(post);
+                    if (subtitleText) {
+                        const subtitle = document.createElement("p");
+                        subtitle.className = "card-subtitle-text";
+                        subtitle.setAttribute("itemprop", "description");
+                        subtitle.innerHTML = highlight(subtitleText, searchQuery);
+                        cardBody.appendChild(subtitle);
+                    }
+
+                    // ---- Meta row: date, reading time, claps, comments ----
+                    const meta = document.createElement("div");
+                    meta.className = "article-meta";
+
+                    const publishedMs = getPublishedTimestamp(post);
+                    const dateLabel = formatDate(publishedMs);
+                    if (dateLabel) {
+                        const dateSpan = document.createElement("span");
+                        const time = document.createElement("time");
+                        time.setAttribute("itemprop", "datePublished");
+                        time.dateTime = new Date(publishedMs).toISOString();
+                        time.textContent = dateLabel;
+                        dateSpan.innerHTML = '<i class="bi bi-calendar3"></i> ';
+                        dateSpan.appendChild(time);
+                        meta.appendChild(dateSpan);
+                    }
+
+                    if (post.readingTime) {
+                        const readSpan = document.createElement("span");
+                        readSpan.innerHTML = `<i class="bi bi-clock"></i> ${Math.max(1, Math.round(post.readingTime))} min read`;
+                        meta.appendChild(readSpan);
+                    }
+
+                    const clapSpan = document.createElement("span");
+                    clapSpan.innerHTML = `<i class="bi bi-hand-thumbs-up"></i> ${getClapCount(post)}`;
+                    meta.appendChild(clapSpan);
+
+                    const respSpan = document.createElement("span");
+                    respSpan.innerHTML = `<i class="bi bi-chat-left-text"></i> ${getCommentCount(post)}`;
+                    meta.appendChild(respSpan);
+
+                    cardBody.appendChild(meta);
+
+                    // ---- Tags ----
+                    const tags = getTags(post).slice(0, MAX_TAGS_SHOWN);
+                    if (tags.length) {
+                        const tagsWrap = document.createElement("div");
+                        tagsWrap.className = "article-tags";
+                        tags.forEach((tag) => {
+                            const tagEl = document.createElement("span");
+                            tagEl.className = "article-tag";
+                            tagEl.textContent = tag.displayTitle || tag.normalizedTagSlug || "";
+                            tagsWrap.appendChild(tagEl);
+                        });
+                        cardBody.appendChild(tagsWrap);
+                    }
+
+                    // ---- Read more link ----
+                    const link = document.createElement("a");
+                    link.href = post.mediumUrl || "#";
+                    link.className = "btn btn-primary";
+                    link.textContent = "Read More";
                     link.target = "_blank";
-
-                    cardBody.appendChild(cardTitle);
-                    cardBody.appendChild(cardSubtitle);
-                    cardBody.appendChild(description);
+                    link.rel = "noopener noreferrer";
+                    link.setAttribute("itemprop", "url");
                     cardBody.appendChild(link);
-                    card.appendChild(image);
+
                     card.appendChild(cardBody);
                     col.appendChild(card);
-                    articlesRow.appendChild(col);
+                    fragment.appendChild(col);
                 });
+
+                articlesRow.appendChild(fragment);
+                articlesRow.querySelectorAll(".article-thumb[data-src]").forEach(observeImage);
             }
 
-            // Function to extract thumbnail from the article description
-            function extractThumbnail(description) {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(description, 'text/html');
-                const figure = doc.querySelector('figure');
-                if (figure) {
-                    const img = figure.querySelector('img');
-                    if (img) {
-                        return img.src;
-                    }
-                }
-                return null;
+            /** Adds a JSON-LD Blog schema so crawlers get structured article data. */
+            function injectStructuredData(posts) {
+                const structuredData = {
+                    "@context": "https://schema.org",
+                    "@type": "Blog",
+                    name: "Medium Articles - Ragu",
+                    url: "https://www.ragug.com/blog.html",
+                    blogPost: posts.slice(0, 20).map((post) => ({
+                        "@type": "BlogPosting",
+                        headline: post.title,
+                        description: getSubtitle(post) || undefined,
+                        datePublished: post.firstPublishedAt ? new Date(post.firstPublishedAt).toISOString() : undefined,
+                        dateModified: post.latestPublishedAt ? new Date(post.latestPublishedAt).toISOString() : undefined,
+                        url: post.mediumUrl,
+                        image: getImageUrl(post),
+                        author: { "@type": "Person", name: "Ragu G" },
+                    })),
+                };
+
+                const script = document.createElement("script");
+                script.type = "application/ld+json";
+                script.textContent = JSON.stringify(structuredData);
+                document.head.appendChild(script);
             }
 
-            // Function to truncate description
-            function truncateDescription(description, maxLength) {
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(description, 'text/html');
-                const text = doc.body.textContent || "";
-                return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
-            }
+            // ---------------------------------------------------------------
+            // Toolbar event wiring
+            // ---------------------------------------------------------------
 
-            // Fetch articles on page load
+            let searchDebounceTimer = null;
+            searchInput.addEventListener("input", (e) => {
+                clearTimeout(searchDebounceTimer);
+                const value = e.target.value;
+                searchDebounceTimer = setTimeout(() => {
+                    state.search = value;
+                    render();
+                }, SEARCH_DEBOUNCE_MS);
+            });
+
+            sortSelect.addEventListener("change", (e) => {
+                state.sort = e.target.value;
+                render();
+            });
+
+            clearFiltersLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                state.search = "";
+                searchInput.value = "";
+                render();
+            });
+
             fetchArticles();
         });
     </script>

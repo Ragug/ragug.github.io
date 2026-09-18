@@ -1,0 +1,1264 @@
+{
+  "username": "ragug",
+  "scraped_at": "2026-09-18T06:01:57Z",
+  "post_count": 27,
+  "posts": [
+    {
+      "id": "feda46f4b14f",
+      "title": "How to Optimize SQL Queries",
+      "mediumUrl": "https://ragug.medium.com/how-to-optimize-sql-queries-feda46f4b14f",
+      "clapCount": 0,
+      "readingTime": 8.328301886792453,
+      "firstPublishedAt": 1784775818723,
+      "latestPublishedAt": 1784775936781,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*96QsN17ylrp_o-kMCjkbwA.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "When a query is slow, the first instinct is usually to add an index. Indexing definitely helps, but it isn’t always the answer — especially…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "sql",
+          "displayTitle": "Sql",
+          "normalizedTagSlug": "sql"
+        },
+        {
+          "id": "indexing",
+          "displayTitle": "Indexing",
+          "normalizedTagSlug": "indexing"
+        },
+        {
+          "id": "low-latency",
+          "displayTitle": "Low Latency",
+          "normalizedTagSlug": "low-latency"
+        },
+        {
+          "id": "api",
+          "displayTitle": "API",
+          "normalizedTagSlug": "api"
+        },
+        {
+          "id": "speed",
+          "displayTitle": "Speed",
+          "normalizedTagSlug": "speed"
+        }
+      ]
+    },
+    {
+      "id": "8388f726d83d",
+      "title": "How to Add a Custom Domain to GitHub Pages",
+      "mediumUrl": "https://ragug.medium.com/how-to-add-a-custom-domain-to-github-pages-8388f726d83d",
+      "clapCount": 0,
+      "readingTime": 2.708490566037736,
+      "firstPublishedAt": 1784440366226,
+      "latestPublishedAt": 1784440366226,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*EhBrM__3l20pEyEixNoRoA.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "One of the easiest free ways to deploy a static site is GitHub Pages — it’s completely free, with no billing involved. The only real…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "github",
+          "displayTitle": "Github",
+          "normalizedTagSlug": "github"
+        },
+        {
+          "id": "free",
+          "displayTitle": "Free",
+          "normalizedTagSlug": "free"
+        },
+        {
+          "id": "web-hosting",
+          "displayTitle": "Web Hosting",
+          "normalizedTagSlug": "web-hosting"
+        },
+        {
+          "id": "github-pages",
+          "displayTitle": "Github Pages",
+          "normalizedTagSlug": "github-pages"
+        },
+        {
+          "id": "domain-names",
+          "displayTitle": "Domain Names",
+          "normalizedTagSlug": "domain-names"
+        }
+      ]
+    },
+    {
+      "id": "f0a0ca2439c2",
+      "title": "Real-Time Notifications with FastAPI, Redis, and Postgres",
+      "mediumUrl": "https://ragug.medium.com/real-time-notifications-with-fastapi-redis-and-postgres-f0a0ca2439c2",
+      "clapCount": 10,
+      "readingTime": 8.71320754716981,
+      "firstPublishedAt": 1783503055887,
+      "latestPublishedAt": 1783503055887,
+      "postResponses": {
+        "count": 1
+      },
+      "previewImage": {
+        "id": "1*NHZPdB7xbBy5cmobszOLpw.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Real-time notifications are one of the most important parts of any modern web or mobile application. The traditional way to build this is…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "fastapi",
+          "displayTitle": "Fastapi",
+          "normalizedTagSlug": "fastapi"
+        },
+        {
+          "id": "notifications",
+          "displayTitle": "Notifications",
+          "normalizedTagSlug": "notifications"
+        },
+        {
+          "id": "firebasecloudmessaging",
+          "displayTitle": "Firebasecloudmessaging",
+          "normalizedTagSlug": "firebasecloudmessaging"
+        },
+        {
+          "id": "postgres",
+          "displayTitle": "Postgres",
+          "normalizedTagSlug": "postgres"
+        },
+        {
+          "id": "server-sent-events",
+          "displayTitle": "Server Sent Events",
+          "normalizedTagSlug": "server-sent-events"
+        }
+      ]
+    },
+    {
+      "id": "f6e1b1e9c538",
+      "title": "Why You Should Dump JWT for PASETO v4 (and How to Use v4-Public & v4-Local)",
+      "mediumUrl": "https://ragug.medium.com/why-you-should-dump-jwt-for-paseto-v4-and-how-to-use-v4-public-v4-local-f6e1b1e9c538",
+      "clapCount": 0,
+      "readingTime": 3.2716981132075476,
+      "firstPublishedAt": 1780313398016,
+      "latestPublishedAt": 1780313398016,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*vgTdhl4QcQGINpxVr483Cg.jpeg",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "If you have built a web application in the last decade, chances are you used JSON Web Tokens (JWT) for authentication. They are the…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "jwt",
+          "displayTitle": "Jwt",
+          "normalizedTagSlug": "jwt"
+        },
+        {
+          "id": "stateless",
+          "displayTitle": "Stateless",
+          "normalizedTagSlug": "stateless"
+        },
+        {
+          "id": "authentication",
+          "displayTitle": "Authentication",
+          "normalizedTagSlug": "authentication"
+        },
+        {
+          "id": "security",
+          "displayTitle": "Security",
+          "normalizedTagSlug": "security"
+        }
+      ]
+    },
+    {
+      "id": "db6bfe58c26c",
+      "title": "How to Deploy Elastic Package Registry in an Air-Gapped Environment Using Docker Compose",
+      "mediumUrl": "https://ragug.medium.com/how-to-deploy-elastic-package-registry-in-an-air-gapped-environment-using-docker-compose-db6bfe58c26c",
+      "clapCount": 0,
+      "readingTime": 2.0226415094339623,
+      "firstPublishedAt": 1780311686860,
+      "latestPublishedAt": 1780311686860,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*6ftQrr99f4NlF4kARBLeCw.jpeg",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Elastic Package Registry (EPR) is a powerful tool for managing and distributing Elastic Stack packages (integrations for Fleet and Kibana)…",
+        "isFullContent": false
+      },
+      "tags": []
+    },
+    {
+      "id": "4e4efbd2edc4",
+      "title": "How to Use APM in ELK (Elastic Stack)",
+      "mediumUrl": "https://ragug.medium.com/how-to-use-apm-in-elk-elastic-stack-4e4efbd2edc4",
+      "clapCount": 1,
+      "readingTime": 3.629245283018868,
+      "firstPublishedAt": 1767239935570,
+      "latestPublishedAt": 1767239935570,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*JURK7PJUl-4hX2k44aEgNw.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Application Performance Monitoring (APM) is an important tool to monitor, trace, and optimize application performance.\n Popular tools like…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "apm",
+          "displayTitle": "APM",
+          "normalizedTagSlug": "apm"
+        },
+        {
+          "id": "sentryio",
+          "displayTitle": "Sentryio",
+          "normalizedTagSlug": "sentryio"
+        },
+        {
+          "id": "elasticsearch",
+          "displayTitle": "Elasticsearch",
+          "normalizedTagSlug": "elasticsearch"
+        },
+        {
+          "id": "elastic-apm",
+          "displayTitle": "Elastic Apm",
+          "normalizedTagSlug": "elastic-apm"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        }
+      ]
+    },
+    {
+      "id": "0d96454e5c96",
+      "title": "🐳 How to Host a Simple, Free Docker Registry",
+      "mediumUrl": "https://ragug.medium.com/how-to-host-a-simple-free-docker-registry-0d96454e5c96",
+      "clapCount": 0,
+      "readingTime": 3.3207547169811322,
+      "firstPublishedAt": 1765018572763,
+      "latestPublishedAt": 1765018572763,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*YAVlut_aKP2Nyx5yWDEbMA.jpeg",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Are you looking for a private, secure, and free way to host your Docker images? Whether you’re working in an air-gapped environment or…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "self-hosted",
+          "displayTitle": "Self Hosted",
+          "normalizedTagSlug": "self-hosted"
+        },
+        {
+          "id": "simple",
+          "displayTitle": "Simple",
+          "normalizedTagSlug": "simple"
+        }
+      ]
+    },
+    {
+      "id": "0de248dc2483",
+      "title": "🚀 How to Set Up a Free & Open-Source Project Management Tool on a VPS Using Docker",
+      "mediumUrl": "https://ragug.medium.com/how-to-set-up-a-free-open-source-project-management-tool-on-a-vps-using-docker-0de248dc2483",
+      "clapCount": 0,
+      "readingTime": 2.6330188679245285,
+      "firstPublishedAt": 1752384930873,
+      "latestPublishedAt": 1763609730954,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*2HJFyKrbvMzkxwvEohZ_3Q.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "In this tutorial, we’ll walk through how to deploy OpenProject — a powerful, open-source project management tool — on your VPS using…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "open-source",
+          "displayTitle": "Open Source",
+          "normalizedTagSlug": "open-source"
+        },
+        {
+          "id": "openproject",
+          "displayTitle": "Openproject",
+          "normalizedTagSlug": "open-projects"
+        },
+        {
+          "id": "ruby",
+          "displayTitle": "Ruby",
+          "normalizedTagSlug": "ruby"
+        },
+        {
+          "id": "project-management",
+          "displayTitle": "Project Management",
+          "normalizedTagSlug": "project-management"
+        },
+        {
+          "id": "selfhost",
+          "displayTitle": "Selfhost",
+          "normalizedTagSlug": "selfhost"
+        }
+      ]
+    },
+    {
+      "id": "93c1e827013e",
+      "title": "How to Use pgAdmin in Browser via Docker",
+      "mediumUrl": "https://ragug.medium.com/how-to-use-pgadmin-in-browser-via-docker-93c1e827013e",
+      "clapCount": 0,
+      "readingTime": 1.7169811320754718,
+      "firstPublishedAt": 1751812523084,
+      "latestPublishedAt": 1763609806217,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*Ezuhh4cDzbGMssSW",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "In this blog, I’ll walk you through how to host pgAdmin using Docker so you can access it from your browser. This method is lightweight…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "postgresql",
+          "displayTitle": "Postgresql",
+          "normalizedTagSlug": "postgresql"
+        },
+        {
+          "id": "pgadmin",
+          "displayTitle": "Pgadmin",
+          "normalizedTagSlug": "pgadmin"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        }
+      ]
+    },
+    {
+      "id": "ba92a052576e",
+      "title": "Setting Up MinIO with Docker: An Open-Source Alternative to AWS S3",
+      "mediumUrl": "https://ragug.medium.com/setting-up-minio-with-docker-an-open-source-alternative-to-aws-s3-ba92a052576e",
+      "clapCount": 3,
+      "readingTime": 2.29811320754717,
+      "firstPublishedAt": 1749652861119,
+      "latestPublishedAt": 1749652861119,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*QudNr5xo7HArqDlR",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": "Continuing the journey: our new mascot and wordmark"
+      },
+      "extendedPreviewContent": {
+        "subtitle": "MinIO is a high-performance, S3-compatible object storage solution that’s perfect for self-hosted environments. It offers a scalable way to…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "minio",
+          "displayTitle": "Minio",
+          "normalizedTagSlug": "minio"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "homelab",
+          "displayTitle": "Homelab",
+          "normalizedTagSlug": "homelab"
+        },
+        {
+          "id": "s3",
+          "displayTitle": "S3",
+          "normalizedTagSlug": "s3"
+        },
+        {
+          "id": "open-source",
+          "displayTitle": "Open Source",
+          "normalizedTagSlug": "open-source"
+        }
+      ]
+    },
+    {
+      "id": "4b9350311bf0",
+      "title": "🚀 Deploy Your Own Private PyPI Repository Using Docker",
+      "mediumUrl": "https://ragug.medium.com/deploy-your-own-private-pypi-repository-using-docker-4b9350311bf0",
+      "clapCount": 0,
+      "readingTime": 1.4867924528301886,
+      "firstPublishedAt": 1748314989084,
+      "latestPublishedAt": 1748314989084,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*iH9WzRjo5GS6c_mh",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "If you need to manage Python packages locally or privately — whether for internal development, security, or bandwidth reasons — you can…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "homelab",
+          "displayTitle": "Homelab",
+          "normalizedTagSlug": "homelab"
+        },
+        {
+          "id": "pypi",
+          "displayTitle": "Pypi",
+          "normalizedTagSlug": "pypi"
+        },
+        {
+          "id": "uv",
+          "displayTitle": "Uv",
+          "normalizedTagSlug": "uv"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        }
+      ]
+    },
+    {
+      "id": "c38aacc009fd",
+      "title": "How to Use Swagger Docs in Django",
+      "mediumUrl": "https://ragug.medium.com/how-to-use-swagger-docs-in-django-c38aacc009fd",
+      "clapCount": 0,
+      "readingTime": 2.5811320754716984,
+      "firstPublishedAt": 1741922623767,
+      "latestPublishedAt": 1741922623767,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*3iS2eURrsZohIhIXJ6ftVA.jpeg",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Documenting your API is essential for seamless integration, easier maintenance, and improved collaboration. In Django, you can effortlessly…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "swagger",
+          "displayTitle": "Swagger",
+          "normalizedTagSlug": "swagger"
+        },
+        {
+          "id": "django",
+          "displayTitle": "Django",
+          "normalizedTagSlug": "django"
+        },
+        {
+          "id": "django-rest-framework",
+          "displayTitle": "Django Rest Framework",
+          "normalizedTagSlug": "django-rest-framework"
+        },
+        {
+          "id": "drf-yasg",
+          "displayTitle": "Drf Yasg",
+          "normalizedTagSlug": "drf-yasg"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        }
+      ]
+    },
+    {
+      "id": "178bf53c9a6b",
+      "title": "How to Use Selenium in Docker or Serverless Environments",
+      "mediumUrl": "https://ragug.medium.com/how-to-use-selenium-in-docker-or-serverless-environments-178bf53c9a6b",
+      "clapCount": 0,
+      "readingTime": 3.2754716981132077,
+      "firstPublishedAt": 1741920795113,
+      "latestPublishedAt": 1741920795113,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*vlTtwFFnBi6hJFW-BSVFUg.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "In this post, we’ll explore how to set up Selenium within a Docker container or serverless environment. Many developers face challenges…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "selenium",
+          "displayTitle": "Selenium",
+          "normalizedTagSlug": "selenium"
+        },
+        {
+          "id": "serverless",
+          "displayTitle": "Serverless",
+          "normalizedTagSlug": "serverless"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        }
+      ]
+    },
+    {
+      "id": "e38eb2da0243",
+      "title": "How to Set Up the ELK Stack with Docker",
+      "mediumUrl": "https://ragug.medium.com/how-to-set-up-the-elk-stack-with-docker-e38eb2da0243",
+      "clapCount": 14,
+      "readingTime": 3.509433962264151,
+      "firstPublishedAt": 1739602389929,
+      "latestPublishedAt": 1785129560220,
+      "postResponses": {
+        "count": 1
+      },
+      "previewImage": {
+        "id": "1*BX7v0DHe4lEse4zMda8hlA.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "The ELK stack — consisting of Elasticsearch, Logstash, and Kibana — is a powerful toolset used to monitor logs from various platforms. In…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "elk",
+          "displayTitle": "Elk",
+          "normalizedTagSlug": "elk"
+        },
+        {
+          "id": "logging",
+          "displayTitle": "Logging",
+          "normalizedTagSlug": "logging"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "monitoring",
+          "displayTitle": "Monitoring",
+          "normalizedTagSlug": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "f23ef1b898ff",
+      "title": "Server Monitoring with Docker: Prometheus and Grafana Made Simple",
+      "mediumUrl": "https://ragug.medium.com/server-monitoring-with-docker-prometheus-and-grafana-made-simple-f23ef1b898ff",
+      "clapCount": 3,
+      "readingTime": 2.841509433962264,
+      "firstPublishedAt": 1736669423342,
+      "latestPublishedAt": 1736669423342,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*fsuGn1sVaoULZfZL",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Server monitoring is crucial for understanding peak loads and ensuring your server can handle traffic before it goes down. To make this…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "server-monitoring",
+          "displayTitle": "Server Monitoring",
+          "normalizedTagSlug": "server-monitoring"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "prometheus",
+          "displayTitle": "Prometheus",
+          "normalizedTagSlug": "prometheus"
+        },
+        {
+          "id": "grafana",
+          "displayTitle": "Grafana",
+          "normalizedTagSlug": "grafana"
+        },
+        {
+          "id": "top-devops-tools",
+          "displayTitle": "Top Devops Tools",
+          "normalizedTagSlug": "top-devops-tools"
+        }
+      ]
+    },
+    {
+      "id": "7f8274349278",
+      "title": "CI/CD Pipeline for PyInstaller on GitHub Actions for Windows",
+      "mediumUrl": "https://ragug.medium.com/ci-cd-pipeline-for-pyinstaller-on-github-actions-for-windows-7f8274349278",
+      "clapCount": 0,
+      "readingTime": 2.169811320754717,
+      "firstPublishedAt": 1734252112168,
+      "latestPublishedAt": 1734252112168,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*7tFxi68l2XWh0otSYwicfQ.jpeg",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "In this blog, we’ll explore how to compile Python code into a Windows .exe file using GitHub Actions. This setup simplifies your workflow…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "pyinstaller",
+          "displayTitle": "Pyinstaller",
+          "normalizedTagSlug": "pyinstaller"
+        },
+        {
+          "id": "github-actions",
+          "displayTitle": "Github Actions",
+          "normalizedTagSlug": "github-actions"
+        },
+        {
+          "id": "ci-cd-pipeline",
+          "displayTitle": "Ci Cd Pipeline",
+          "normalizedTagSlug": "ci-cd-pipeline"
+        },
+        {
+          "id": "python-to-exe",
+          "displayTitle": "Python To Exe",
+          "normalizedTagSlug": "python-to-exe"
+        }
+      ]
+    },
+    {
+      "id": "eb08e8195c55",
+      "title": "Deploying Django with PostgreSQL, Cron Jobs, and Nginx in Docker Compose with Static File Serving…",
+      "mediumUrl": "https://ragug.medium.com/deploying-django-with-postgresql-cron-jobs-and-nginx-in-docker-compose-with-static-file-serving-eb08e8195c55",
+      "clapCount": 0,
+      "readingTime": 4.679245283018868,
+      "firstPublishedAt": 1729408841015,
+      "latestPublishedAt": 1729408886646,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*V1llv3_mRWt-cfR85Kfp9A.jpeg",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Deploying Django with PostgreSQL, Cron jobs, and Nginx in Docker containers provides a robust, scalable, and production-ready environment…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "django",
+          "displayTitle": "Django",
+          "normalizedTagSlug": "django"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "static-file",
+          "displayTitle": "Static File",
+          "normalizedTagSlug": "static-file"
+        },
+        {
+          "id": "cronjob",
+          "displayTitle": "Cronjob",
+          "normalizedTagSlug": "cronjob"
+        },
+        {
+          "id": "postgresql",
+          "displayTitle": "Postgresql",
+          "normalizedTagSlug": "postgresql"
+        }
+      ]
+    },
+    {
+      "id": "4eddc09a4cca",
+      "title": "How to Download PDFs Using Selenium: From Simple to Advanced Methods",
+      "mediumUrl": "https://ragug.medium.com/how-to-download-pdfs-using-selenium-from-simple-to-advanced-methods-4eddc09a4cca",
+      "clapCount": 50,
+      "readingTime": 2.260377358490566,
+      "firstPublishedAt": 1726380836017,
+      "latestPublishedAt": 1726380836017,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*5e7ug53jA2DsovMwXwJ4lQ.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "How to Download PDFs Using Selenium: From Simple to Advanced Methods When scraping websites with Selenium, you may encounter scenarios…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "selenium",
+          "displayTitle": "Selenium",
+          "normalizedTagSlug": "selenium"
+        },
+        {
+          "id": "pdf",
+          "displayTitle": "Pdf",
+          "normalizedTagSlug": "pdf"
+        },
+        {
+          "id": "pdf-download",
+          "displayTitle": "Pdf Download",
+          "normalizedTagSlug": "pdf-download"
+        },
+        {
+          "id": "chrome",
+          "displayTitle": "Chrome",
+          "normalizedTagSlug": "chrome"
+        },
+        {
+          "id": "html-to-pdf",
+          "displayTitle": "Html To Pdf",
+          "normalizedTagSlug": "html-to-pdf"
+        }
+      ]
+    },
+    {
+      "id": "258a124338c0",
+      "title": "Running Selenium on AWS Lambda: A Serverless Approach",
+      "mediumUrl": "https://ragug.medium.com/running-selenium-on-aws-lambda-a-serverless-approach-258a124338c0",
+      "clapCount": 0,
+      "readingTime": 4.366037735849057,
+      "firstPublishedAt": 1725679365512,
+      "latestPublishedAt": 1725679365512,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*Nkn_jusL6APNdppc0ksAoA.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "In this blog post, we’ll explore how to run Selenium in a serverless environment using AWS Lambda and Docker. This setup allows you to…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "selenium",
+          "displayTitle": "Selenium",
+          "normalizedTagSlug": "selenium"
+        },
+        {
+          "id": "lambda",
+          "displayTitle": "Lambda",
+          "normalizedTagSlug": "lambda"
+        },
+        {
+          "id": "docker",
+          "displayTitle": "Docker",
+          "normalizedTagSlug": "docker"
+        },
+        {
+          "id": "aws",
+          "displayTitle": "AWS",
+          "normalizedTagSlug": "aws"
+        },
+        {
+          "id": "aws-lambda",
+          "displayTitle": "AWS Lambda",
+          "normalizedTagSlug": "aws-lambda"
+        }
+      ]
+    },
+    {
+      "id": "3fece98fc75b",
+      "title": "How to Use a Free SSL Certificate from Certbot for Your Project",
+      "mediumUrl": "https://ragug.medium.com/how-to-use-a-free-ssl-certificate-from-certbot-for-your-project-3fece98fc75b",
+      "clapCount": 0,
+      "readingTime": 1.5886792452830187,
+      "firstPublishedAt": 1722687846435,
+      "latestPublishedAt": 1733459135413,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*7ergh-VFcXueWL687gpuwQ.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "In this blog, we will guide you through the process of securing your website by converting it from HTTP to HTTPS using a free SSL…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "website",
+          "displayTitle": "Website",
+          "normalizedTagSlug": "website"
+        },
+        {
+          "id": "https",
+          "displayTitle": "Https",
+          "normalizedTagSlug": "https"
+        },
+        {
+          "id": "certbot",
+          "displayTitle": "Certbot",
+          "normalizedTagSlug": "certbot"
+        },
+        {
+          "id": "ssl",
+          "displayTitle": "Ssl",
+          "normalizedTagSlug": "ssl"
+        },
+        {
+          "id": "free",
+          "displayTitle": "Free",
+          "normalizedTagSlug": "free"
+        }
+      ]
+    },
+    {
+      "id": "3c93801995f9",
+      "title": "Git Tips to Recall When We Forget",
+      "mediumUrl": "https://ragug.medium.com/git-tips-to-recall-when-we-forget-3c93801995f9",
+      "clapCount": 0,
+      "readingTime": 3.4226415094339626,
+      "firstPublishedAt": 1717125680164,
+      "latestPublishedAt": 1728443548450,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*XUDLhL30S8w7n8YJU22mOw.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "This blog is a valuable resource for both Git beginners and intermediate users. It offers essential tips and commands that are easy to…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "git",
+          "displayTitle": "Git",
+          "normalizedTagSlug": "git"
+        },
+        {
+          "id": "github",
+          "displayTitle": "Github",
+          "normalizedTagSlug": "github"
+        },
+        {
+          "id": "tips-and-tricks",
+          "displayTitle": "Tips And Tricks",
+          "normalizedTagSlug": "tips-and-tricks"
+        },
+        {
+          "id": "useful-tips",
+          "displayTitle": "Useful Tips",
+          "normalizedTagSlug": "useful-tips"
+        },
+        {
+          "id": "time-saving",
+          "displayTitle": "Time Saving",
+          "normalizedTagSlug": "time-saving"
+        }
+      ]
+    },
+    {
+      "id": "eeac1f1086ce",
+      "title": "Understanding Makefiles: A Guide for Developers",
+      "mediumUrl": "https://ragug.medium.com/understanding-makefiles-a-guide-for-developers-eeac1f1086ce",
+      "clapCount": 3,
+      "readingTime": 2.316981132075472,
+      "firstPublishedAt": 1716633794714,
+      "latestPublishedAt": 1716777821154,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*2IwxJSCrfjQLa9My.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Introduction",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "makefile",
+          "displayTitle": "Makefile",
+          "normalizedTagSlug": "makefile"
+        },
+        {
+          "id": "automation",
+          "displayTitle": "Automation",
+          "normalizedTagSlug": "automation"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "tips",
+          "displayTitle": "Tips",
+          "normalizedTagSlug": "tips"
+        },
+        {
+          "id": "useful-tips",
+          "displayTitle": "Useful Tips",
+          "normalizedTagSlug": "useful-tips"
+        }
+      ]
+    },
+    {
+      "id": "3388c4f639e2",
+      "title": "Effective Strategies to Prevent Cron Job Conflicts and Optimize System Efficiency",
+      "mediumUrl": "https://ragug.medium.com/effective-strategies-to-prevent-cron-job-conflicts-and-optimize-system-efficiency-3388c4f639e2",
+      "clapCount": 0,
+      "readingTime": 5.018867924528302,
+      "firstPublishedAt": 1714792844118,
+      "latestPublishedAt": 1714792844118,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*YpYxBLvk6-mnSHsV",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Cron jobs are essential for automating routine tasks on a server, but if not managed carefully, they can lead to conflicts and…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "cron",
+          "displayTitle": "Cron",
+          "normalizedTagSlug": "cron"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "task-management-tool",
+          "displayTitle": "Task Management Tool",
+          "normalizedTagSlug": "task-management-tool"
+        },
+        {
+          "id": "cronjob-scheduler",
+          "displayTitle": "Cronjob Scheduler",
+          "normalizedTagSlug": "cronjob-scheduler"
+        },
+        {
+          "id": "tools-for-developers",
+          "displayTitle": "Tools For Developers",
+          "normalizedTagSlug": "tools-for-developers"
+        }
+      ]
+    },
+    {
+      "id": "65ca620e8ae1",
+      "title": "Powerful Modules for PDF File Processing and Scraping",
+      "mediumUrl": "https://ragug.medium.com/powerful-modules-for-pdf-file-processing-and-scraping-65ca620e8ae1",
+      "clapCount": 1,
+      "readingTime": 3.0339622641509436,
+      "firstPublishedAt": 1714204042732,
+      "latestPublishedAt": 1714204042732,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*Fm4RP_vdQm4JqeYK.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Handling PDF files can be cumbersome due to their complex format designed primarily for accurate layout representation rather than data…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "pdf-converter",
+          "displayTitle": "Pdf Converter",
+          "normalizedTagSlug": "pdf-converter"
+        },
+        {
+          "id": "scraping",
+          "displayTitle": "Scraping",
+          "normalizedTagSlug": "scraping"
+        },
+        {
+          "id": "libraries",
+          "displayTitle": "Libraries",
+          "normalizedTagSlug": "libraries"
+        },
+        {
+          "id": "tips",
+          "displayTitle": "Tips",
+          "normalizedTagSlug": "tips"
+        }
+      ]
+    },
+    {
+      "id": "686e116e002a",
+      "title": "How to Use Virtual Display in Python on Linux Servers 🐍🖥️",
+      "mediumUrl": "https://ragug.medium.com/how-to-use-virtual-display-in-python-on-linux-servers-%EF%B8%8F-686e116e002a",
+      "clapCount": 1,
+      "readingTime": 1.2361635220125786,
+      "firstPublishedAt": 1706536944454,
+      "latestPublishedAt": 1706536944454,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "0*N4rOQMSJwysJUVn2",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Introduction:",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "servers",
+          "displayTitle": "Servers",
+          "normalizedTagSlug": "servers"
+        },
+        {
+          "id": "selenium",
+          "displayTitle": "Selenium",
+          "normalizedTagSlug": "selenium"
+        },
+        {
+          "id": "automation",
+          "displayTitle": "Automation",
+          "normalizedTagSlug": "automation"
+        },
+        {
+          "id": "puppeteer",
+          "displayTitle": "Puppeteer",
+          "normalizedTagSlug": "puppeteer"
+        }
+      ]
+    },
+    {
+      "id": "442847f50560",
+      "title": "How to deploy Django Project",
+      "mediumUrl": "https://ragug.medium.com/how-to-deploy-django-project-442847f50560",
+      "clapCount": 0,
+      "readingTime": 2.569811320754717,
+      "firstPublishedAt": 1706439351459,
+      "latestPublishedAt": 1729331687791,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Introduction:",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "django",
+          "displayTitle": "Django",
+          "normalizedTagSlug": "django"
+        },
+        {
+          "id": "hosting",
+          "displayTitle": "Hosting",
+          "normalizedTagSlug": "hosting"
+        },
+        {
+          "id": "deployment",
+          "displayTitle": "Deployment",
+          "normalizedTagSlug": "deployment"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "website",
+          "displayTitle": "Website",
+          "normalizedTagSlug": "website"
+        }
+      ]
+    },
+    {
+      "id": "ebefdfd63eab",
+      "title": "How to Upload Files Using the Google Drive API in Python",
+      "mediumUrl": "https://ragug.medium.com/how-to-upload-files-using-the-google-drive-api-in-python-ebefdfd63eab",
+      "clapCount": 25,
+      "readingTime": 4.290566037735849,
+      "firstPublishedAt": 1694239677010,
+      "latestPublishedAt": 1714216929559,
+      "postResponses": {
+        "count": 3
+      },
+      "previewImage": {
+        "id": "0*ih1xpXxoo5wMgyfV.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "If you need to upload a file to Google Drive using the API for free, it’s possible. There are multiple ways to achieve this, and in this…",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "drive",
+          "displayTitle": "Drive",
+          "normalizedTagSlug": "drive"
+        },
+        {
+          "id": "google-api",
+          "displayTitle": "Google Api",
+          "normalizedTagSlug": "google-api"
+        },
+        {
+          "id": "google-drive-api",
+          "displayTitle": "Google Drive Api",
+          "normalizedTagSlug": "google-drive-api"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        }
+      ]
+    }
+  ]
+}
