@@ -24,10 +24,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v4
+        uses: astral-sh/setup-uv@v7
 
       # No requirements.txt / venv needed — scrape-blog.py declares its own
       # dependencies inline (PEP 723), so `uv run` resolves and caches them itself.
@@ -56,7 +56,7 @@ jobs:
       # debugging, without committing it to the repo (see .gitignore note below).
       - name: Upload raw scrape snapshot
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: raw-scrape-snapshot
           path: output/blogs.json
