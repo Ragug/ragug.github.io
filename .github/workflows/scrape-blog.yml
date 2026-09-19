@@ -2,8 +2,7 @@ name: Scrape Medium Blog
 
 on:
   schedule:
-    # Runs daily at 03:00 UTC (~08:30 IST). Cron uses UTC regardless of repo/runner timezone.
-    - cron: "0 3 * * *"
+    - cron: "17 3 * * *" # 03:17 UTC — avoids the top-of-hour scheduler crunch
   workflow_dispatch: {} # lets you trigger it manually from the Actions tab
   push:
     paths:
@@ -28,9 +27,11 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: false # simple single-file script, caching isn't worth it
 
       # No requirements.txt / venv needed — scrape-blog.py declares its own
-      # dependencies inline (PEP 723), so `uv run` resolves and caches them itself.
+      # dependencies inline (PEP 723), so `uv run` resolves them itself.
       - name: Run scraper
         id: scrape
         run: >
