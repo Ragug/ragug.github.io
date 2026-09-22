@@ -3,34 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Medium Articles - Ragu</title>
-
-    <!-- SEO Tags -->
-    <meta name="description"
-        content="Read Ragu G's articles on web development, web scraping, Telegram bots, Chrome extension development, and Arduino programming.">
-    <meta name="keywords"
-        content="web development, web scraping, telegram bots, chrome extension, Arduino,ragu, ragug, Ragu, ragu website, ragu2k, ragu kec, RAGU, ragu eee, raguggg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Ragu G — Python, Web Scraping &amp; Automation Articles</title>
+    <meta name="description" content="Technical articles by Ragu G on Python development, web scraping, Telegram bots, Chrome extensions, and backend automation, syndicated from Medium.">
+    <meta name="keywords" content="ragu g blog, python articles, web scraping tutorials, telegram bots, chrome extension development">
+    <meta name="robots" content="index, follow">
     <meta name="author" content="RAGU G">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-site-verification" content="google7ab02f675b61b20e">
     <link rel="canonical" href="https://www.ragug.com/blog.html">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Medium Articles - Ragu">
-    <meta property="og:description"
-        content="Read Ragu G's articles on web development, web scraping, Telegram bots, Chrome extensions, and Arduino projects.">
-    <meta property="og:image" content="./assets/img/aboutpic.jpg">
+    <meta property="og:title" content="Blog | Ragu G — Python, Web Scraping & Automation Articles">
+    <meta property="og:description" content="Technical articles by Ragu G on Python development, web scraping, Telegram bots, Chrome extensions, and backend automation.">
+    <meta property="og:image" content="https://www.ragug.com/assets/img/aboutpic.jpg">
     <meta property="og:url" content="https://www.ragug.com/blog.html">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Medium Articles - Ragu">
-    <meta name="twitter:description"
-        content="Read Ragu G's articles on web development, web scraping, Telegram bots, Chrome extensions, and Arduino projects.">
+    <meta name="twitter:title" content="Blog | Ragu G">
+    <meta name="twitter:description" content="Technical articles on Python, web scraping, and automation, syndicated from Medium.">
 
-    <!-- Google Tag Manager -->
+    <meta name="google-site-verification" content="google7ab02f675b61b20e">
+
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0WLPZ5VQY"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -287,44 +280,14 @@
 </head>
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
 
-            <h1 class="logo me-auto me-lg-0"><a href="index.html">RAGU</a></h1>
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="blog.html">Blogs</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+    <!-- Header injected by assets/js/layout.js -->
+    <div id="site-header"></div>
 
-            <div class="header-social-links">
-                <a href="mailto: ragu19062002@gmail.com"><i class="bi bi-envelope-at"></i></a>
-                <a href="http://api.whatsapp.com/send?phone=+917598226670&amp;text=Hi Ragu" target="_"><i
-                        class="bi bi-whatsapp"></i></a>
-                <a href="tg://resolve?domain=ragu2k"><i class="bi bi-telegram"></i></a>
-                <a href="https://www.instagram.com/_ragug_/" target="_"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/ragug/" target="_"> <i class="bi bi-linkedin"></i></a>
-                <a href="https://www.ragug.com/" target="_"><i class="bi bi-github"></i></a>
-            </div>
-
-        </div>
-
-    </header><!-- End Header -->
     <main id="main">
 
-        <div>
-            <h2>Blogs</h2>
-        </div>
-
         <div class="container">
+            <h1>Blogs</h1>
 
             <!-- ---------- Toolbar: search, sort, tag filter ---------- -->
             <div class="blog-toolbar">
@@ -367,6 +330,9 @@
             </div>
         </noscript>
     </main>
+
+    <!-- Footer injected by assets/js/layout.js -->
+    <div id="site-footer"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -740,7 +706,7 @@
                 const structuredData = {
                     "@context": "https://schema.org",
                     "@type": "Blog",
-                    name: "Medium Articles - Ragu",
+                    name: "Blog | Ragu G",
                     url: "https://www.ragug.com/blog.html",
                     blogPost: posts.slice(0, 20).map((post) => ({
                         "@type": "BlogPosting",
@@ -789,6 +755,22 @@
             fetchArticles();
         });
     </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Shared header/footer — must load before main.js -->
+    <script src="assets/js/layout.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
