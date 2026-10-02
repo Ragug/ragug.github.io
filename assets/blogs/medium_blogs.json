@@ -1,8 +1,57 @@
 {
   "username": "ragug",
-  "scraped_at": "2026-09-18T06:01:57Z",
-  "post_count": 27,
+  "scraped_at": "2026-10-02T09:45:07Z",
+  "post_count": 28,
   "posts": [
+    {
+      "id": "5e05e7d7ceb9",
+      "title": "You Don’t Need Kafka for CQRS: How I Cut a Report API from 15 Seconds to 20ms",
+      "mediumUrl": "https://ragug.medium.com/you-dont-need-kafka-for-cqrs-how-i-cut-a-report-api-from-15-seconds-to-20ms-5e05e7d7ceb9",
+      "clapCount": 0,
+      "readingTime": 4.760377358490566,
+      "firstPublishedAt": 1790922465408,
+      "latestPublishedAt": 1790922735915,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*D39RIGG4WTW_UIgIoIye-Q.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "Splitting reads from writes with plain Postgres materialized views. No event sourcing, no second database.",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "cqrs-pattern",
+          "displayTitle": "Cqrs Pattern",
+          "normalizedTagSlug": "cqrs-pattern"
+        },
+        {
+          "id": "postgresql",
+          "displayTitle": "Postgresql",
+          "normalizedTagSlug": "postgresql"
+        },
+        {
+          "id": "backendengineering",
+          "displayTitle": "Backendengineering",
+          "normalizedTagSlug": "backend-engineering"
+        },
+        {
+          "id": "system-design-concepts",
+          "displayTitle": "System Design Concepts",
+          "normalizedTagSlug": "system-design-concepts"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        }
+      ]
+    },
     {
       "id": "feda46f4b14f",
       "title": "How to Optimize SQL Queries",
