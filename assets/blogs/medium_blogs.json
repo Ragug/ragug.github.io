@@ -1,8 +1,57 @@
 {
   "username": "ragug",
-  "scraped_at": "2026-10-02T09:45:07Z",
-  "post_count": 28,
+  "scraped_at": "2026-10-04T09:46:33Z",
+  "post_count": 29,
   "posts": [
+    {
+      "id": "bcb3239cba5a",
+      "title": "How I Cut Write API Latency by 85% (1300ms to 195ms)",
+      "mediumUrl": "https://ragug.medium.com/how-i-cut-write-api-latency-by-85-1300ms-to-195ms-bcb3239cba5a",
+      "clapCount": 0,
+      "readingTime": 8.016981132075472,
+      "firstPublishedAt": 1791092069571,
+      "latestPublishedAt": 1791092069571,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*MqPIaPIUJTD8KsdjN9UG0g.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "No new infrastructure, no rewrite. Just fewer database round trips and getting slow I/O out of the request path.",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "software-engineering",
+          "displayTitle": "Software Engineering",
+          "normalizedTagSlug": "software-engineering"
+        },
+        {
+          "id": "web-development",
+          "displayTitle": "Web Development",
+          "normalizedTagSlug": "web-development"
+        },
+        {
+          "id": "database",
+          "displayTitle": "Database",
+          "normalizedTagSlug": "database"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "performance-optimization",
+          "displayTitle": "Performance Optimization",
+          "normalizedTagSlug": "performance-optimization"
+        }
+      ]
+    },
     {
       "id": "5e05e7d7ceb9",
       "title": "You Don’t Need Kafka for CQRS: How I Cut a Report API from 15 Seconds to 20ms",
