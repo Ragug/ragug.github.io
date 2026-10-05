@@ -1,8 +1,57 @@
 {
   "username": "ragug",
-  "scraped_at": "2026-10-04T09:46:33Z",
-  "post_count": 29,
+  "scraped_at": "2026-10-05T10:25:10Z",
+  "post_count": 30,
   "posts": [
+    {
+      "id": "923f6c89b762",
+      "title": "How to Deploy a React App to GitHub Pages with GitHub Actions (No gh-pages Package)",
+      "mediumUrl": "https://ragug.medium.com/how-to-deploy-a-react-app-to-github-pages-with-github-actions-no-gh-pages-package-923f6c89b762",
+      "clapCount": 0,
+      "readingTime": 5.481446540880504,
+      "firstPublishedAt": 1791174663177,
+      "latestPublishedAt": 1791174663177,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*9ZfXNVxuDK7mAWmlYrlOdg.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "TL;DR",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "react",
+          "displayTitle": "React",
+          "normalizedTagSlug": "react"
+        },
+        {
+          "id": "github-actions",
+          "displayTitle": "Github Actions",
+          "normalizedTagSlug": "github-actions"
+        },
+        {
+          "id": "github-pages",
+          "displayTitle": "Github Pages",
+          "normalizedTagSlug": "github-pages"
+        },
+        {
+          "id": "vitejs",
+          "displayTitle": "Vitejs",
+          "normalizedTagSlug": "vitejs"
+        },
+        {
+          "id": "web-development",
+          "displayTitle": "Web Development",
+          "normalizedTagSlug": "web-development"
+        }
+      ]
+    },
     {
       "id": "bcb3239cba5a",
       "title": "How I Cut Write API Latency by 85% (1300ms to 195ms)",
