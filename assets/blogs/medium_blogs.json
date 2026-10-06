@@ -1,13 +1,62 @@
 {
   "username": "ragug",
-  "scraped_at": "2026-10-05T10:25:10Z",
-  "post_count": 30,
+  "scraped_at": "2026-10-06T10:16:27Z",
+  "post_count": 31,
   "posts": [
+    {
+      "id": "f80f8d5a5606",
+      "title": "How I Cut a Multi-Hour Inventory Sync Down to 5 Minutes",
+      "mediumUrl": "https://ragug.medium.com/how-i-cut-a-multi-hour-inventory-sync-down-to-5-minutes-f80f8d5a5606",
+      "clapCount": 0,
+      "readingTime": 7.490566037735849,
+      "firstPublishedAt": 1791276566159,
+      "latestPublishedAt": 1791276566159,
+      "postResponses": {
+        "count": 0
+      },
+      "previewImage": {
+        "id": "1*OdXGLEdLhIsgxPg5N1bDsg.png",
+        "focusPercentX": null,
+        "focusPercentY": null,
+        "alt": null
+      },
+      "extendedPreviewContent": {
+        "subtitle": "A faster library helps. A better architecture changes everything. How I cut an 18-hour inventory sync to 5 minutes.",
+        "isFullContent": false
+      },
+      "tags": [
+        {
+          "id": "data-engineering",
+          "displayTitle": "Data Engineering",
+          "normalizedTagSlug": "data-engineering"
+        },
+        {
+          "id": "python",
+          "displayTitle": "Python",
+          "normalizedTagSlug": "python"
+        },
+        {
+          "id": "postgresql",
+          "displayTitle": "Postgresql",
+          "normalizedTagSlug": "postgresql"
+        },
+        {
+          "id": "apache-airflow",
+          "displayTitle": "Apache Airflow",
+          "normalizedTagSlug": "apache-airflow"
+        },
+        {
+          "id": "pandas-vs-polars",
+          "displayTitle": "Pandas Vs Polars",
+          "normalizedTagSlug": "pandas-vs-polars"
+        }
+      ]
+    },
     {
       "id": "923f6c89b762",
       "title": "How to Deploy a React App to GitHub Pages with GitHub Actions (No gh-pages Package)",
       "mediumUrl": "https://ragug.medium.com/how-to-deploy-a-react-app-to-github-pages-with-github-actions-no-gh-pages-package-923f6c89b762",
-      "clapCount": 0,
+      "clapCount": 1,
       "readingTime": 5.481446540880504,
       "firstPublishedAt": 1791174663177,
       "latestPublishedAt": 1791174663177,
