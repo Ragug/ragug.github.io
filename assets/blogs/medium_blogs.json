@@ -1,6 +1,6 @@
 {
   "username": "ragug",
-  "scraped_at": "2026-10-06T10:16:27Z",
+  "scraped_at": "2026-10-08T10:34:04Z",
   "post_count": 31,
   "posts": [
     {
@@ -56,7 +56,7 @@
       "id": "923f6c89b762",
       "title": "How to Deploy a React App to GitHub Pages with GitHub Actions (No gh-pages Package)",
       "mediumUrl": "https://ragug.medium.com/how-to-deploy-a-react-app-to-github-pages-with-github-actions-no-gh-pages-package-923f6c89b762",
-      "clapCount": 1,
+      "clapCount": 10,
       "readingTime": 5.481446540880504,
       "firstPublishedAt": 1791174663177,
       "latestPublishedAt": 1791174663177,
