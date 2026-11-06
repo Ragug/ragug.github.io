@@ -4,22 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Telegram Proxy Servers &amp; Developer Tools | Ragu G</title>
-  <meta name="description" content="A live list of free Telegram MTProto proxy servers to bypass network restrictions on school or college networks, plus handy developer tools from Ragu G.">
-  <meta name="keywords" content="telegram proxy, mtproto proxy, free telegram proxy servers, bypass telegram block, ragu g tools">
+  <title>Free Proxy List Sources &amp; Developer Tools | Ragu G</title>
+  <meta name="description" content="Public HTTP, SOCKS4 and SOCKS5 proxy list sources, a searchable proxy table, and a practical guide to using proxies with Telegram and other apps.">
+  <meta name="keywords" content="free proxy list, socks5 proxy, http proxy, telegram proxy, developer tools, ragu g tools">
   <meta name="robots" content="index, follow">
   <meta name="author" content="RAGU G">
   <link rel="canonical" href="https://www.ragug.com/tools.html">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Free Telegram Proxy Servers & Developer Tools | Ragu G">
-  <meta property="og:description" content="A live list of free Telegram MTProto proxy servers, plus handy developer tools from Ragu G.">
+  <meta property="og:title" content="Free Proxy List Sources & Developer Tools | Ragu G">
+  <meta property="og:description" content="Public HTTP, SOCKS4 and SOCKS5 proxy list sources, a searchable proxy table, and practical usage notes from Ragu G.">
   <meta property="og:image" content="https://www.ragug.com/assets/img/aboutpic.jpg">
   <meta property="og:url" content="https://www.ragug.com/tools.html">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Free Telegram Proxy Servers | Ragu G">
-  <meta name="twitter:description" content="A live list of free Telegram MTProto proxy servers to bypass network restrictions.">
+  <meta name="twitter:title" content="Free Proxy List Sources | Ragu G">
+  <meta name="twitter:description" content="Public HTTP, SOCKS4 and SOCKS5 proxy list sources and a searchable proxy table.">
 
   <meta itemprop="name" content="Ragu G">
   <meta itemprop="url" content="https://www.ragug.com/tools.html">
@@ -78,6 +78,33 @@
     .fl-table tbody tr:hover {
       background-color: #e5e5e5;
     }
+
+    .proxy-sources li {
+      margin-bottom: 8px;
+    }
+
+    .proxy-btn {
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 10px 26px;
+      border: 0;
+      border-radius: 50px;
+      color: #fff;
+      background: #34b7a7;
+      transition: 0.3s;
+    }
+
+    .proxy-btn:hover:not(:disabled) {
+      background: #3dc8b7;
+    }
+
+    .proxy-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
   </style>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -102,51 +129,76 @@
 
         <div class="section-title">
           <h1>Tools</h1>
-          <p>Here are some tools which help you.</p>
+          <p>Free, public proxy list sources and a searchable proxy table for developers.</p>
+        </div>
+
+        <div class="row mt-5" id="free-proxy-lists">
+          <div class="col-lg-12">
+            <div class="article">
+              <h2>Free Proxy List Sources</h2>
+              <p>Public, regularly updated proxy lists maintained by open-source projects. Each source publishes its own
+                schedule and format; follow the links to view the latest data and usage terms.</p>
+              <ul class="proxy-sources">
+                <li><a href="https://github.com/monosans/proxy-list" target="_blank" rel="noopener">monosans/proxy-list</a>
+                  — HTTP, SOCKS4 and SOCKS5, re-checked hourly (MIT).</li>
+                <li><a href="https://github.com/clarketm/proxy-list" target="_blank" rel="noopener">clarketm/proxy-list</a>
+                  — HTTP forward proxies, updated daily (MIT).</li>
+                <li><a href="https://github.com/TheSpeedX/PROXY-List" target="_blank" rel="noopener">TheSpeedX/PROXY-List</a>
+                  — HTTP, SOCKS4 and SOCKS5, updated daily.</li>
+                <li><a href="https://github.com/proxifly/free-proxy-list" target="_blank" rel="noopener">proxifly/free-proxy-list</a>
+                  — HTTP, SOCKS4 and SOCKS5 with geolocation, updated every 5 minutes
+                  (<a href="https://github.com/proxifly/free-proxy-list/blob/main/LICENSE" target="_blank" rel="noopener">GPL-3.0</a>).
+                  <a href="https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/all/data.json" target="_blank" rel="noopener">JSON feed</a>.</li>
+              </ul>
+              <p class="small text-muted"><strong>Disclaimer:</strong> These lists are maintained by third-party projects.
+                We do not host, operate, or verify any proxy and are not responsible for their availability or behavior.
+                Use them only for lawful purposes and in compliance with the terms of service of any site you access.
+                A proxy can see your traffic, so never send sensitive data through an untrusted proxy.</p>
+              <button type="button" class="proxy-btn" id="loadProxyBtn">Load proxifly list</button>
+              <span id="proxyStatus" class="ms-3 small text-muted" role="status" aria-live="polite"></span>
+              <div class="table-responsive mt-3">
+                <table class="fl-table" id="proxyTable">
+                  <thead>
+                    <tr>
+                      <th>Protocol</th>
+                      <th>Proxy</th>
+                      <th>Country</th>
+                      <th>City</th>
+                      <th>Anonymity</th>
+                      <th>Score</th>
+                    </tr>
+                  </thead>
+                  <tbody id="proxyTableBody">
+                    <!-- Rows loaded from the proxifly JSON feed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="row mt-5">
-          <div class="table-responsive">
-            <table class="fl-table" id="dtBasicExample">
-              <thead>
-                <tr>
-                  <th>Country</th>
-                  <th>Server Link</th>
-                  <th>Up</th>
-                  <th>Down</th>
-                  <th>Ping</th>
-                  <th>Uptime</th>
-                </tr>
-              </thead>
-              <tbody id="myTable">
-                <!-- Table rows dynamically populated here -->
-              </tbody>
-            </table>
-          </div>
-          <div>
+          <div class="col-lg-12">
             <div class="article">
-              <h2>How to Use Telegram Proxy in School and College Network</h2>
-              <p>If you are on a school or college network and unable to access Telegram, using a Telegram Proxy can help
-                you bypass network restrictions and access Telegram.</p>
-              <p>To use Telegram Proxy, you need to find a reliable and trusted Telegram Proxy server. You can find a
-                list of Telegram Proxy servers in the table above.</p>
-              <p>Once you have found a Telegram Proxy server, you need to configure your Telegram client to use the
-                proxy server. To do this, follow these steps:</p>
+              <h2>How to Use These Proxies with Telegram</h2>
+              <p>The lists above include HTTP, SOCKS4 and SOCKS5 servers. Telegram supports SOCKS5 proxies, so you can
+                use a working SOCKS5 entry from a source you trust.</p>
               <ol>
-                <li>Install Telegram on your device.</li>
-                <li>Visit <a href="https://www.ragug.com/tools.html">this page</a> in your web browser.</li>
-                <li>Scroll up to find the list of Telegram proxy servers.</li>
-                <li>Click on any one of the proxy servers in the list.</li>
-                <li>Telegram will prompt you to open the proxy link.</li>
-                <li>Click "Open" to connect to the proxy server.</li>
-                <li>The proxy server will now be enabled and you can use Telegram even in school or college networks.</li>
+                <li>Load the proxifly list above, or open one of the source repositories, and pick a SOCKS5 proxy that
+                  is geographically close to you.</li>
+                <li>Read the host and port from the proxy string. For example, <code>socks5://203.0.113.10:1080</code>
+                  means host <code>203.0.113.10</code> and port <code>1080</code>.</li>
+                <li>In Telegram, open <strong>Settings &rarr; Advanced &rarr; Connection type &rarr; Add proxy</strong>
+                  (desktop: <strong>Settings &rarr; Advanced &rarr; Connection type</strong>).</li>
+                <li>Choose <strong>SOCKS5</strong>, enter the host and port, then save. Most public proxies do not
+                  require a username or password.</li>
+                <li>Enable the proxy and open a chat. If it does not connect, disable it and try another SOCKS5 entry;
+                  public proxies are often slow or offline.</li>
               </ol>
-              <p>That's it! You should now be able to access Telegram using the Telegram Proxy server.</p>
-              <p>Note: Be sure to use a reputable Telegram Proxy server and only connect to trusted proxy servers to
-                ensure your online security and privacy.</p>
+              <p>On a school or college network, a proxy only works if the network allows outbound traffic to the
+                proxy's port. If that traffic is blocked, use a trusted VPN or ask your network administrator instead.</p>
             </div>
           </div>
-
         </div>
     </section>
   </main><!-- End #main -->
@@ -160,41 +212,86 @@
   <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
   <script>
-    fetch("https://raw.githubusercontent.com/hookzof/socks5_list/master/tg/mtproto.json")
-      .then(function (e) {
-        return e.json();
-      })
-      .then(function (e) {
-        for (var t = e.length, n = 0; n < t; n++) {
-          var o = document.getElementById("myTable").insertRow(n),
-            r = o.insertCell(0),
-            c = o.insertCell(1),
-            l = o.insertCell(2),
-            i = o.insertCell(3),
-            d = o.insertCell(4),
-            s = o.insertCell(5),
-            o = "tg://proxy?server=" + e[n].host + "&port=" + e[n].port + "&secret=" + e[n].secret;
-          c.innerHTML = '<a href="' + o + '">Proxy' + (n + 1) + "</a>";
-          l.innerHTML = e[n].up;
-          i.innerHTML = e[n].down;
-          d.innerHTML = e[n].ping;
-          s.innerHTML = e[n].uptime;
-          r.innerHTML = e[n].country;
-        }
-        // Call the function after successful fetch response
-        initializeDataTable();
-      });
+    (function () {
+      var PROXY_DATA_URL = "https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/all/data.json";
+      var MAX_ROWS = 200;
 
-    function initializeDataTable() {
-      $(document).ready(function () {
-        $('#dtBasicExample').DataTable({
-          pagingType: 'simple',
-          info: false,
-          searching: false,
-          ordering: false
+      var loadBtn = document.getElementById("loadProxyBtn");
+      var statusEl = document.getElementById("proxyStatus");
+      var tbodyEl = document.getElementById("proxyTableBody");
+      var loaded = false;
+
+      function renderProxies(list) {
+        var rows = list
+          .filter(function (item) {
+            return item && item.proxy && item.protocol;
+          })
+          .sort(function (a, b) {
+            return (b.score || 0) - (a.score || 0);
+          })
+          .slice(0, MAX_ROWS);
+
+        tbodyEl.innerHTML = "";
+
+        rows.forEach(function (item) {
+          var geo = item.geolocation || {};
+          var values = [
+            String(item.protocol).toUpperCase(),
+            item.proxy,
+            geo.country || "-",
+            geo.city || "-",
+            item.anonymity || "-",
+            item.score != null ? item.score : "-"
+          ];
+
+          var tr = document.createElement("tr");
+          values.forEach(function (value) {
+            var td = document.createElement("td");
+            td.textContent = value;
+            tr.appendChild(td);
+          });
+          tbodyEl.appendChild(tr);
         });
+
+        if (window.jQuery && jQuery.fn.DataTable) {
+          jQuery("#proxyTable").DataTable({
+            pagingType: "simple",
+            pageLength: 10,
+            searching: true,
+            ordering: true,
+            info: true
+          });
+        }
+
+        statusEl.textContent = "Showing top " + rows.length + " of " + list.length +
+          " proxies by score. Use the source links above for the full list.";
+      }
+
+      loadBtn.addEventListener("click", function () {
+        if (loaded) {
+          return;
+        }
+
+        loaded = true;
+        loadBtn.disabled = true;
+        statusEl.textContent = "Loading proxy list...";
+
+        fetch(PROXY_DATA_URL)
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error("HTTP " + response.status);
+            }
+            return response.json();
+          })
+          .then(renderProxies)
+          .catch(function (error) {
+            loaded = false;
+            loadBtn.disabled = false;
+            statusEl.textContent = "Could not load the proxy list. Please try again later.";
+            console.error("Proxy list load failed:", error);
+          });
       });
-    }
+    })();
   </script>
 
   <!-- Vendor JS Files -->
