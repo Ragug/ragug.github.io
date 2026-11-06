@@ -1,13 +1,13 @@
 {
   "username": "ragug",
-  "scraped_at": "2026-10-08T10:34:04Z",
+  "scraped_at": "2026-11-06T08:40:05Z",
   "post_count": 31,
   "posts": [
     {
       "id": "f80f8d5a5606",
       "title": "How I Cut a Multi-Hour Inventory Sync Down to 5 Minutes",
       "mediumUrl": "https://ragug.medium.com/how-i-cut-a-multi-hour-inventory-sync-down-to-5-minutes-f80f8d5a5606",
-      "clapCount": 0,
+      "clapCount": 3,
       "readingTime": 7.490566037735849,
       "firstPublishedAt": 1791276566159,
       "latestPublishedAt": 1791276566159,
