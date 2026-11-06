@@ -324,9 +324,10 @@ h6 {
 }
 
 #hero h2 {
-  color: #6f6f6f;
+  color: #f2f2f2;
   margin: 10px 0 0 0;
   font-size: 22px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
 }
 
 #hero .btn-about {
@@ -346,6 +347,24 @@ h6 {
 
 #hero .btn-about:hover {
   background: #3dc8b7;
+}
+
+#hero .hero-summary {
+  max-width: 680px;
+  margin: 18px auto 0;
+  color: #e6e6e6;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 992px) {
+  #hero .hero-summary {
+    color: #4d4d4d;
+    font-size: 14px;
+    text-shadow: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -371,8 +390,10 @@ h6 {
   }
 
   #hero h2 {
+    color: #4d4d4d;
     font-size: 18px;
     line-height: 24px;
+    text-shadow: none;
   }
 }
 

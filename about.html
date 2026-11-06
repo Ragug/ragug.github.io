@@ -4,22 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Ragu G | Senior Python Developer &amp; Backend Lead</title>
-  <meta name="description" content="Learn about Ragu G's background as a Senior Python Developer — expertise in FastAPI, Django, distributed workflows, DevOps automation, and open-source contributions.">
-  <meta name="keywords" content="Ragu G, python developer, fastapi, django, devops, backend engineer, about ragu">
+  <title>About Ragu G | Senior Backend Engineer</title>
+  <meta name="description" content="Learn about Ragu G, a Senior Backend Engineer with 3+ years building FastAPI services, distributed data pipelines, and reliable production systems at scale.">
+  <meta name="keywords" content="Ragu G, senior backend engineer, python developer, fastapi, kafka, postgresql, distributed systems, devops, about ragu">
   <meta name="robots" content="index, follow">
   <meta name="author" content="RAGU G">
   <link rel="canonical" href="https://www.ragug.com/about.html">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="About Ragu G — Senior Python Developer & Backend Lead">
-  <meta property="og:description" content="Explore Ragu G's professional journey, core technical expertise, and passion for building resilient microservices and automation pipelines.">
+  <meta property="og:title" content="About Ragu G — Senior Backend Engineer">
+  <meta property="og:description" content="Explore Ragu G's professional journey building scalable FastAPI services, distributed data pipelines, and reliable production systems.">
   <meta property="og:image" content="https://www.ragug.com/assets/img/aboutpic.jpg">
   <meta property="og:url" content="https://www.ragug.com/about.html">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Ragu G — Senior Python Developer">
-  <meta name="twitter:description" content="Explore Ragu G's professional journey and core technical expertise in backend and automation engineering.">
+  <meta name="twitter:title" content="About Ragu G — Senior Backend Engineer">
+  <meta name="twitter:description" content="Explore Ragu G's professional journey and core expertise in backend engineering, distributed systems, and automation.">
 
   <meta itemprop="name" content="Ragu G">
   <meta itemprop="url" content="https://www.ragug.com/about.html">
@@ -47,16 +47,18 @@
     "name": "Ragu G",
     "url": "https://www.ragug.com/",
     "image": "https://www.ragug.com/assets/img/aboutpic.jpg",
-    "jobTitle": "Senior Python Developer & Backend Lead",
+    "jobTitle": "Senior Backend Engineer",
     "email": "mailto:ragu19062002@gmail.com",
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Namakkal",
       "addressRegion": "Tamil Nadu",
       "addressCountry": "IN"
     },
     "sameAs": [
       "https://github.com/Ragug/",
       "https://www.linkedin.com/in/ragug/",
+      "https://ragug.medium.com/",
       "https://www.instagram.com/_ragug_/"
     ]
   }
@@ -81,60 +83,27 @@
   </style>
 
   <script>
-    function calculateAge(birthdate) {
-        const now = new Date();
-        const birthDate = new Date(birthdate);
+    (function () {
+      var TOTAL_START = new Date("2023-02-01T00:00:00");
+      var FULL_TIME_START = new Date("2023-06-01T00:00:00");
+      var MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.25;
 
-        let years = now.getFullYear() - birthDate.getFullYear();
-        let months = now.getMonth() - birthDate.getMonth();
-        let days = now.getDate() - birthDate.getDate();
-        let hours = now.getHours() - birthDate.getHours();
-        let minutes = now.getMinutes() - birthDate.getMinutes();
-        let seconds = now.getSeconds() - birthDate.getSeconds();
+      function yearsSince(start) {
+        return ((Date.now() - start.getTime()) / MS_PER_YEAR).toFixed(1);
+      }
 
-        if (seconds < 0) {
-            minutes--;
-            seconds += 60;
-        }
+      function updateExperience() {
+        var totalEl = document.getElementById("experience-total");
+        var fullTimeEl = document.getElementById("experience-fulltime");
+        if (totalEl) totalEl.textContent = yearsSince(TOTAL_START) + " years";
+        if (fullTimeEl) fullTimeEl.textContent = yearsSince(FULL_TIME_START) + " years";
+      }
 
-        if (minutes < 0) {
-            hours--;
-            minutes += 60;
-        }
-
-        if (seconds < 0 || minutes < 0 || hours < 0) {
-            days--;
-            hours += 24;
-        }
-
-        if (days < 0) {
-            months--;
-            const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
-            days += prevMonth.getDate();
-        }
-
-        if (months < 0) {
-            years--;
-            months += 12;
-        }
-
-        return ` ${years}Y:${months}M:${days}D:${hours}h:${minutes}m:${seconds}s`;
-    }
-
-    function startLiveAgeCalculation(birthdate) {
-        function updateAge() {
-            const age = calculateAge(birthdate);
-            document.getElementById('age').textContent = age;
-        }
-
-        updateAge();
-        setInterval(updateAge, 1000);
-    }
-
-    window.addEventListener('load', function () {
-        const birthdate = "2002-06-19T00:00:00";
-        startLiveAgeCalculation(birthdate);
-    });
+      window.addEventListener("load", function () {
+        updateExperience();
+        setInterval(updateExperience, 60 * 1000);
+      });
+    })();
   </script>
 </head>
 
@@ -151,37 +120,49 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>I am a Senior Python Developer and Backend Lead specializing in engineering high-performance RESTful APIs, scalable distributed workflows, and robust automation frameworks. From designing fault-tolerant microservices that handle high-concurrency traffic to integrating secure AI-driven DevOps pipelines in air-gapped enterprise environments, I bridge the gap between heavy data processing and infrastructure engineering.</p>
+          <p>I am a Senior Backend Engineer with 3+ years of experience designing, operating, and scaling production systems. I specialize in FastAPI microservices, event-driven architecture, high-throughput data pipelines, and the infrastructure that keeps them reliable under real-world load.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/aboutpic.jpg" class="img-fluid" alt="Ragu G, Senior Python Developer and Backend Lead" loading="lazy" width="400" height="400">
+            <img src="assets/img/aboutpic.jpg" class="img-fluid" alt="Ragu G, Senior Backend Engineer" loading="lazy" width="400" height="400">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h1>Senior Python Developer &amp; Backend Lead</h1>
+            <h1>Senior Backend Engineer</h1>
 
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Birthday:</strong> 19 June 2002</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Location:</strong> Namakkal, Tamil Nadu, India</li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> www.ragug.com</li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Phone:</strong> +91 7598226670</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>City:</strong> Tamil Nadu, India</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> ragu19062002@gmail.com</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Age:</strong><span id="age"></span></li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> BE (Electrical &amp; Electronics)</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> ragu19062002@gmail.com</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Experience:</strong> <span id="experience-total"></span></li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Full-time:</strong> <span id="experience-fulltime"></span></li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Education:</strong> B.E. (Electrical &amp; Electronics)</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Focus:</strong> Distributed Systems &amp; Backend Architecture</li>
                 </ul>
               </div>
             </div>
             <p>
-              With deep expertise across Python, Java, and DevOps tools like Docker and GitLab CI/CD, I focus on optimizing software bottlenecks and building resilient data architectures. Beyond enterprise platform engineering, I am an active open-source contributor, technical blogger on Medium, and security enthusiast passionate about web system reverse-engineering.
+              I am a backend engineer who enjoys owning platform-level problems end to end — from architecture and delivery to CI/CD, observability, documentation, and mentoring. At SMTlabs (Vodafone Idea), I built a mobile-first preventive-maintenance platform used by 5k active users at 200+ RPS. Applying CQRS, event-driven workflows, cache-aside with stampede protection, and outbox-style consistency, I cut a write API from 1300ms to 195ms and a list query from 500ms to 50ms.
             </p>
+            <p>
+              I architected a Kafka + TimescaleDB pipeline ingesting 85M writes every 5 minutes with state-based sharding and Patroni HA, reducing storage by 80%. Earlier, as technical lead at Relu Consultancy, I scaled a scraping platform to a Kubernetes-orchestrated Selenium Grid with 300+ concurrent browsers and built a production RAG shopping assistant using Scrapy, Pinecone, LangChain, and OpenAI.
+            </p>
+            <p>
+              I care about building systems that stay fast and reliable in production. I write about backend engineering on <a href="blog.html">my blog</a>, contribute to open-source projects such as curl_cffi and pyseto, and document detailed case studies in <a href="projects.html">my projects</a>.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> Cut write API latency from 1300ms to 195ms and list queries from 500ms to 50ms.</li>
+              <li><i class="bi bi-check2-circle"></i> Designed a Kafka + TimescaleDB pipeline for 85M writes per 5 minutes with 80% less storage.</li>
+              <li><i class="bi bi-check2-circle"></i> Sustained 200+ RPS at 5ms P95 using cache-aside, distributed locks, and idempotent APIs.</li>
+              <li><i class="bi bi-check2-circle"></i> Maintained 99% uptime with Docker Swarm, Nginx circuit breaking, and ELK/APM observability.</li>
+            </ul>
             <div class="social">
               <a href="mailto:ragu19062002@gmail.com" aria-label="Email"><i class="fal fa-envelope"></i></a>
               <a href="http://api.whatsapp.com/send?phone=+917598226670&amp;text=Hi Ragu" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -202,7 +183,7 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <p>An overview of my core technical competency across backend frameworks, distributed task processing, data extraction systems, and system infrastructure orchestration:</p>
+          <p>Hands-on across backend frameworks, distributed systems, databases, cloud infrastructure, and AI/LLM engineering:</p>
         </div>
 
         <div class="row skills-content">
@@ -210,30 +191,30 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">Python (FastAPI, Django, Flask) <i class="val">95%</i></span>
+              <span class="skill">Backend &amp; APIs (Python, FastAPI, Django, Flask, Spring Boot) <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Web Scraping &amp; Automation (Scrapy, Selenium) <i class="val">95%</i></span>
+              <span class="skill">Distributed Systems (CQRS, Event-Driven, Outbox, Idempotency) <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">DevOps &amp; Infrastructure (Docker, CI/CD, RHEL) <i class="val">85%</i></span>
+              <span class="skill">Databases &amp; Caching (PostgreSQL, TimescaleDB, Redis) <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Messaging &amp; Data (Kafka, RabbitMQ, Celery, Airflow, Polars) <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Distributed Workflows (Airflow, Celery) <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -242,30 +223,30 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">Databases &amp; Storage (PostgreSQL, MinIO, Elastic) <i class="val">85%</i></span>
+              <span class="skill">Cloud &amp; Infrastructure (AWS, GCP, Docker, Kubernetes, Nginx) <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Java &amp; Spring Boot <i class="val">70%</i></span>
+              <span class="skill">Observability &amp; Reliability (ELK, APM, Grafana, Patroni, pgBackRest) <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Observability &amp; Security (ELK, Grafana, LDAP) <i class="val">75%</i></span>
+              <span class="skill">AI / LLM Engineering (RAG, LangChain, Pinecone, OpenAI, TensorFlow) <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Generative AI Implementation (RAG, LLMs) <i class="val">75%</i></span>
+              <span class="skill">Web Scraping &amp; Automation (Scrapy, Selenium Grid, Playwright) <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -288,22 +269,22 @@
 
           <div class="col-lg-3 col-6 text-center">
             <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Years of Core Industry Exp.</p>
+            <p>Years of Experience</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects Delivered</p>
+            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Peak RPS at 5ms P95</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Open Source Contributions</p>
+            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Million Writes per 5 Min</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="195" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Peak API RPS Handled</p>
+            <span data-purecounter-start="0" data-purecounter-end="99" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Production Uptime (%)</p>
           </div>
 
         </div>
