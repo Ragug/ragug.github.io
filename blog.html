@@ -4,24 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Ragu G — Python, Web Scraping &amp; Automation Articles</title>
-    <meta name="description" content="Technical articles by Ragu G on Python development, web scraping, Telegram bots, Chrome extensions, and backend automation, syndicated from Medium.">
-    <meta name="keywords" content="ragu g blog, python articles, web scraping tutorials, telegram bots, chrome extension development">
-    <meta name="robots" content="index, follow">
+    <title>Backend Engineering Blog | Ragu G — FastAPI, Kafka &amp; Python</title>
+    <meta name="description" content="Technical articles by Ragu G on backend engineering, FastAPI, Kafka, PostgreSQL, data pipelines, web scraping, and automation, syndicated from Medium.">
+    <meta name="keywords" content="ragu g blog, backend engineering blog, fastapi articles, kafka tutorials, postgresql, python articles, web scraping tutorials">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="RAGU G">
+    <meta name="theme-color" content="#34b7a7">
     <link rel="canonical" href="https://www.ragug.com/blog.html">
+    <link rel="me" href="https://github.com/Ragug/">
+    <link rel="me" href="https://www.linkedin.com/in/ragug/">
+    <link rel="me" href="https://ragug.medium.com/">
 
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="Blog | Ragu G — Python, Web Scraping & Automation Articles">
-    <meta property="og:description" content="Technical articles by Ragu G on Python development, web scraping, Telegram bots, Chrome extensions, and backend automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ragu G">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="Backend Engineering Blog | Ragu G">
+    <meta property="og:description" content="Technical articles on backend engineering, FastAPI, Kafka, PostgreSQL, data pipelines, and automation.">
     <meta property="og:image" content="https://www.ragug.com/assets/img/aboutpic.jpg">
+    <meta property="og:image:alt" content="Ragu G, Senior Backend Engineer">
     <meta property="og:url" content="https://www.ragug.com/blog.html">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog | Ragu G">
-    <meta name="twitter:description" content="Technical articles on Python, web scraping, and automation, syndicated from Medium.">
+    <meta name="twitter:title" content="Backend Engineering Blog | Ragu G">
+    <meta name="twitter:description" content="Technical articles on FastAPI, Kafka, PostgreSQL, data pipelines, and automation.">
+    <meta name="twitter:image" content="https://www.ragug.com/assets/img/aboutpic.jpg">
+    <meta name="twitter:image:alt" content="Ragu G, Senior Backend Engineer">
 
     <meta name="google-site-verification" content="google7ab02f675b61b20e">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.ragug.com/#person",
+          "name": "Ragu G",
+          "jobTitle": "Senior Backend Engineer",
+          "url": "https://www.ragug.com/",
+          "sameAs": [
+            "https://github.com/Ragug/",
+            "https://www.linkedin.com/in/ragug/",
+            "https://ragug.medium.com/"
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://www.ragug.com/blog.html#webpage",
+          "url": "https://www.ragug.com/blog.html",
+          "name": "Backend Engineering Blog | Ragu G",
+          "description": "Technical articles on backend engineering, FastAPI, Kafka, PostgreSQL, data pipelines, web scraping, and automation.",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://www.ragug.com/#website",
+            "url": "https://www.ragug.com/",
+            "name": "Ragu G — Senior Backend Engineer"
+          },
+          "about": { "@id": "https://www.ragug.com/#person" },
+          "mainEntity": { "@id": "https://www.ragug.com/blog.html#blog" },
+          "breadcrumb": { "@id": "https://www.ragug.com/blog.html#breadcrumb" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.ragug.com/blog.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ragug.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ragug.com/blog.html" }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0WLPZ5VQY"></script>
@@ -37,8 +91,10 @@
     <link href="assets/img/logo.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -263,6 +319,12 @@
             border-radius: 2px;
         }
 
+        .blog-intro {
+            max-width: 760px;
+            color: #555;
+            margin: 0 0 24px;
+        }
+
         #blog-status {
             text-align: center;
             color: #777;
@@ -283,7 +345,8 @@
     <main id="main">
 
         <div class="container">
-            <h1>Blogs</h1>
+            <h1>Backend Engineering Blog</h1>
+            <p class="blog-intro">Practical notes on FastAPI, Kafka, PostgreSQL, data pipelines, web scraping, and automation — written from production experience.</p>
 
             <!-- ---------- Toolbar: search, sort, tag filter ---------- -->
             <div class="blog-toolbar">
@@ -315,6 +378,11 @@
 
             <div class="row" id="articles-row" aria-live="polite"></div>
             <p id="blog-status">Loading articles…</p>
+
+            <div class="text-center mt-5">
+                <p class="mb-3"><strong>Looking for a backend engineer who writes production-ready systems?</strong></p>
+                <a href="contact.html" class="btn-hire">Hire Me</a>
+            </div>
         </div>
 
         <!-- Fallback for crawlers / users without JS -->
@@ -699,8 +767,10 @@
                 const structuredData = {
                     "@context": "https://schema.org",
                     "@type": "Blog",
-                    name: "Blog | Ragu G",
+                    "@id": "https://www.ragug.com/blog.html#blog",
+                    name: "Backend Engineering Blog | Ragu G",
                     url: "https://www.ragug.com/blog.html",
+                    author: { "@id": "https://www.ragug.com/#person" },
                     blogPost: posts.slice(0, 20).map((post) => ({
                         "@type": "BlogPosting",
                         headline: post.title,

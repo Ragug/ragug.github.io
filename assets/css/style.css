@@ -20,6 +20,26 @@ a:hover {
   text-decoration: none;
 }
 
+.btn-hire {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  background: #34b7a7;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-hire:hover,
+.btn-hire:focus {
+  background: #3dc8b7;
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
